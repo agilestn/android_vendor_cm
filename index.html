@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Android vendor cm : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Android vendor cm</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/agilestn/android_vendor_cm">View on GitHub</a>
+
+          <h1 id="project_title">Android vendor cm</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/agilestn/android_vendor_cm/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/agilestn/android_vendor_cm/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="cyanogenmod" class="anchor" href="#cyanogenmod"><span class="octicon octicon-link"></span></a>CyanogenMod</h1>
+
+<h2>
+<a name="submitting-patches" class="anchor" href="#submitting-patches"><span class="octicon octicon-link"></span></a>Submitting Patches</h2>
+
+<p>Patches are always welcome!  Please submit your patches via CyanogenMod Gerrit!
+You can do this by using these commands:</p>
+
+<pre><code>(From root android directory)
+. build/envsetup.sh
+(Go to repo you are patching, make your changes and commit)
+cmgerrit &lt;for(new)/changes(patch set)&gt; &lt;branch/change-id&gt; 
+
+repo start cm-10.1 .
+(Make your changes and commit)
+repo upload .
+</code></pre>
+
+<p>Note: "." meaning current directory
+For more help on using this tool, use this command: repo help upload</p>
+
+<p>Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
+Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~&lt;# of commits&gt;</p>
+
+<p>To view the status of your and others' patches, visit <a href="http://review.cyanogenmod.org/">CyanogenMod Code Review</a></p>
+
+<h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p>To get started with Android/CyanogenMod, you'll need to get
+familiar with <a href="https://source.android.com/source/using-repo.html">Repo</a> and <a href="https://source.android.com/source/version-control.html">Version Control with Git</a>.</p>
+
+<p>To initialize your local repository using the CyanogenMod trees, use a command like this:</p>
+
+<pre><code>repo init -u git://github.com/CyanogenMod/android.git -b cm-10.1
+</code></pre>
+
+<p>Then to sync up:</p>
+
+<pre><code>repo sync
+</code></pre>
+
+<p>Please see the <a href="http://wiki.cyanogenmod.org/">CyanogenMod Wiki</a> for building instructions, by device.</p>
+
+<p>For more information on this Github Organization and how it is structured, 
+please <a href="http://wiki.cyanogenmod.org/w/Github_Organization">read the wiki article</a></p>
+
+<h2>
+<a name="buildbot" class="anchor" href="#buildbot"><span class="octicon octicon-link"></span></a>Buildbot</h2>
+
+<p>All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.</p>
+
+<p>You can view the current build statuses in the <a href="http://jenkins.cyanogenmod.org">Jenkins</a> tool.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Android vendor cm maintained by <a href="https://github.com/agilestn">agilestn</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
